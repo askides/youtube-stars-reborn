@@ -1,5 +1,4 @@
-const { Howl } = require("howler");
-
+import { Howl } from "howler";
 import "./style.css";
 
 const buttons = document.querySelectorAll("main button");
