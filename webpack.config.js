@@ -1,4 +1,5 @@
 const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -18,12 +19,19 @@ module.exports = {
       title: "Youtube Stars Reborn",
       template: "src/index.html",
     }),
+    new CopyPlugin({
+      patterns: [{ from: "./src/assets", to: "assets" }],
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(mp3)$/i,
+        type: "asset/resource",
       },
     ],
   },
