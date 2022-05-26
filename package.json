@@ -1,0 +1,17 @@
+{
+  "name": "youtube-stars-reborn",
+  "version": "1.0.0",
+  "description": "YT Stars - Reborn For The Web",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Renato Pozzi <renato.pozzi.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
